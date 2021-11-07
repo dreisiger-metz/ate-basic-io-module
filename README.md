@@ -7,7 +7,7 @@ const char BasicIOModuleParser::NOTHING[]    = "";
 const char BasicIOModuleParser::QUERY_ONLY[] = "(QUERY ONLY)";
 
 const Parser::Handler BasicIOModuleParser::Handlers[] = {
-//    Command           Command handler                                         Multi-channel  Allowed values
+//    Command           Command handler                                        Multi-channel?  Allowed values
     { "++ADDR",         (ParserHandler) &BasicIOModuleParser::ADDRHandler,              false, QUERY_ONLY },
     { "*IDN",           (ParserHandler) &BasicIOModuleParser::IDNHandler,               false, QUERY_ONLY },
     { "*SAV",           (ParserHandler) &BasicIOModuleParser::SAVHandler,               false, NOTHING },
